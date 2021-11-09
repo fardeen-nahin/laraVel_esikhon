@@ -8,7 +8,7 @@
 </head>
 <body>
     <p>
-        Addition of two numbers is = 
+        Addition of two numbers is = {{$result}}
     </p>
 </body>
 </html>

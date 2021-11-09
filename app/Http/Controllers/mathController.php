@@ -9,7 +9,7 @@ class mathController extends Controller
     public function sum($num1, $num2){
 
          $result = $num1 + $num2;
-        return view('sum');
+        return view('sum', ['result' => $result]);
 
     }
 
