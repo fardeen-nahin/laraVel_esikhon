@@ -6,9 +6,17 @@ use Illuminate\Http\Request;
 
 class mathController extends Controller
 {
-    public function multy($number){
-        $num = $number * 10;
-        return view('multy',['result' => $num, 'myname' => 'nahin']);
+    public function sum($num1, $num2){
 
+         $result = $num1 + $num2;
+        return view('sum');
+
+    }
+
+    public function sub(){
+        return view('sub');
+    }
+    public function mul(){
+        return view('mul');
     }
 }

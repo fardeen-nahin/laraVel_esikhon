@@ -1,15 +1,9 @@
 <?php
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('homepage');
+Route::group(['prefix' => 'math'], function(){
 
-Route::get('/contact', function (){
-    return view('contact');
-})->name('contactPage');
+    Route::get('sum/{num1}/{num2}', 'mathController@sum');
+    Route::get('sub', 'mathController@sub');
+    Route::get('mul', 'mathController@mul');
 
-Route::get('/about', function (){
-    return view('about');
-})->name('aboutPage');
-
-Route::get('/multy/{num1}', 'mathController@multy')->name('mathPage');
+});
