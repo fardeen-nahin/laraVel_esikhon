@@ -6,17 +6,9 @@ use Illuminate\Http\Request;
 
 class mathController extends Controller
 {
-    public function sum($num1, $num2){
-
-         $result = $num1 + $num2;
-        return view('sum', compact('result','num1','num2'));
-
-    }
-
-    public function sub(){
-        return view('sub');
-    }
-    public function mul(){
-        return view('mul');
-    }
+   public function sum($n1, $n2){
+        $result = $n1 + $n2;
+        return view('sum', compact('result'
+    ));
+   }
 }
