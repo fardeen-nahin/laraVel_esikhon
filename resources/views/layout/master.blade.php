@@ -12,8 +12,14 @@
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
+    <a href="/extra">Extra</a>
 
     @yield('content')
+
+    @section('extraField')
+    <p>Lorem ipsum dolor sit, amet consectetur</p>
+    @show
+
     @yield('script')
 </body>
 </html>

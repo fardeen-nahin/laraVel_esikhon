@@ -4,12 +4,7 @@
 @section('content')
 <h1>This is Contact.</h1>
 
-<form action="">
-    <input type="text">
-    <br>
-    <input type="submit" value="Subscribe">
-</form>
-
+@include('partials.contactform')
 @endsection
 
 @section('style')
