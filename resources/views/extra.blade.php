@@ -4,10 +4,7 @@
 
 
     @component('components.alert')
-    @slot('title')
-        This is a Title
-    @endslot
-        <h1>Something Error</h1>
+        <span>Something Error</span>
     @endcomponent
 
 @endsection
