@@ -8,7 +8,7 @@ class PersonsCotroller extends Controller
     public function index(){
 
         $person_list = person::all();
-        dd($person_list);
+        dd($person_list->toArray());
         
     }
 }
