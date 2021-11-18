@@ -7,9 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello HomePage</h1>
-
-    <a href="{{route('contactPage')}}">Contact</a>
-    <a href="{{route('aboutPage')}}">About</a>
+    
+        @foreach ($person_list as $personList)
+            
+                <h2>{{$personList->name}}</h2>
+                <h2>{{$personList->email}}</h2>
+                <h2>{{$personList->address}}</h2>
+            
+        @endforeach
+        
 </body>
 </html>
