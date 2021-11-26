@@ -10,6 +10,7 @@
     <table>
         <tr>
             <td>ID</td>
+            <td>Name</td>
             <td>Email</td>
             <td>Address</td>
         </tr>
@@ -17,8 +18,9 @@
         @foreach ($person_list as $person)
             <tr>
             <td>{{$person-> id}}</td>
-            <td>{{$person-> email}}</td>
-            <td>{{$person-> address}}</td> 
+            <td>{{$person-> Name}}</td>
+            <td>{{$person-> Email}}</td>
+            <td>{{$person-> Address}}</td> 
         </tr>
         @endforeach
     </table>
